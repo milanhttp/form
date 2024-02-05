@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Registration Page</title>	
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="www.your-webmaster.com">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Register here</h1>
+
+  <form action="#" id="registration-form">
+
+    <fieldset>
+
+      <div id="tab-mobile" class="tab-active"> Register with mobile number </div>
+
+      <div id="tab-email"> Register with email </div>
+
+      <div class="input-section">
+
+        <label for="registration-input">   
+
+          <span id="label-text">Your mobile number (10 digits) :</span>  
+
+        </label><br>
+
+        <input type="tel" id="registration-input" name="phone-email">  <span id="error-message"> </span>
+
+      </div>
+
+      <div  class="input-section">
+
+        <label for="currency">Currency:</label><br>
+
+        <select id="currency" name="currency">
+          <option value="usd">US Dollar (USD)</option>
+          <option value="eur">Euro (EUR)</option>
+          <option value="jpy">Yen (JPY)</option>
+          <option value="gbp">Pound Sterling (GBP)</option>
+        </select>
+
+      </div>
+
+      <div class="input-section">
+
+        <label for="terms" class="checkbox-label">Do you agree with our terms and conditions?
+
+         <input type="checkbox" id="terms" name="terms" value="terms">
+
+         <span class="checkmark"></span>
+
+       </label><br>
+
+       <span id="error-message-terms">Please, check that you agree with our terms and conditions.</span>
+
+     </div>
+
+     <div class="input-section">
+
+      <label for="promo" class="checkbox-label">Would you like to get our promo notifications?
+
+       <input type="checkbox" id="promo" name="promo" value="promo" checked="checked">
+
+       <span class="checkmark"></span>
+
+     </label><br>
+
+   </div>
+
+   <input type="button" value="Submit" id="submit">
+
+ </fieldset>
+
+</form> 
+
+<script src="main.js"></script>
+
+</body>
+</html>
